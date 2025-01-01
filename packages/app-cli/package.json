@@ -8,9 +8,9 @@
     "test": "jest --verbose=false --config=jest.config.js --bail --forceExit",
     "test-one": "jest --verbose=false --config=jest.config.js --bail --forceExit",
     "test-ci": "jest --config=jest.config.js --forceExit",
-    "build": "gulp build",
-    "start": "gulp build -L && node \"build/main.js\" --stack-trace-enabled --log-level debug --env dev",
-    "start-no-build": "node \"build/main.js\" --stack-trace-enabled --log-level debug --env dev",
+    "build": "node init && gulp build",
+    "start": "node init && gulp build -L && node \"build/main.js\" --stack-trace-enabled --log-level debug --env dev",
+    "start-no-build": "node init && node \"build/main.js\" --stack-trace-enabled --log-level debug --env dev",
     "tsc": "tsc --project tsconfig.json",
     "watch": "tsc --watch --preserveWatchOutput --project tsconfig.json"
   },

@@ -35,7 +35,7 @@
     "coverage": "cat coverage/lcov.info | coveralls",
     "lint": "eslint --ext=js,ts src",
     "format": "prettier --write '**/*.{ts,md,json}'",
-    "build": "tsc",
+    "build": "node init && tsc",
     "prepare": "npm run build"
   },
   "dependencies": {

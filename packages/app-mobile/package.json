@@ -5,9 +5,9 @@
   "version": "3.2.0",
   "private": true,
   "scripts": {
-    "start": "BROWSERSLIST_IGNORE_OLD_DATA=true react-native start --reset-cache",
+    "start": "node init && BROWSERSLIST_IGNORE_OLD_DATA=true react-native start --reset-cache",
     "android": "react-native run-android",
-    "build": "NO_FLIPPER=1 gulp build",
+    "build": "node init && NO_FLIPPER=1 gulp build",
     "web": "webpack --mode production --config ./web/webpack.config.js --progress && cp -r ./web/public/* ./web/dist/",
     "serve-web": "webpack serve --mode development --static ./web/public/ --config ./web/webpack.config.js --progress",
     "tsc": "tsc --project tsconfig.json",

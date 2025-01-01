@@ -8,7 +8,7 @@
     "react-dom": "18.2.0"
   },
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "node init && webpack --mode=production",
     "watch": "webpack watch --mode=development",
     "postinstall": "node postinstall.js && npm run build"
   },

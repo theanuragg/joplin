@@ -10,7 +10,7 @@
   },
   "scripts": {
     "buildAssets": "node Tools/buildAssets.js",
-    "build": "yarn buildAssets",
+    "build": "node init && yarn buildAssets",
     "tsc": "tsc --project tsconfig.json",
     "watch": "tsc --watch --preserveWatchOutput --project tsconfig.json",
     "test": "jest",

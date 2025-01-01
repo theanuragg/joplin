@@ -2,7 +2,7 @@
   "name": "@joplin/app-clipper",
   "private": true,
   "scripts": {
-    "build": "cd popup && npm install"
+    "build": "node init && cd popup && npm install"
   },
   "version": "1.0.8",
   "description": "Joplin Web Clipper",
